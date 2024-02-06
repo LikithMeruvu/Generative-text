@@ -1,7 +1,5 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from dotenv import load_dotenv
-import os
 
 from Gemini import Display_Gemini
 from Neva import Display_NeVA_22B
@@ -9,10 +7,6 @@ from Neva import Display_NeVA_22B
 from Palm2 import Display_Palm2
 from Mistral import Display_Mistral_7B
 from Llama2 import Display_Llama2
-
-load_dotenv()
-GEMINI_API_KEY = api_key = os.getenv("GEMINI_API_KEY")
-NVIDIA_API_KEY = api_key = os.getenv("NVIDIA_API_KEY")
 
 st.set_page_config(
         page_title="Generative LLMs",
@@ -29,14 +23,14 @@ with st.sidebar:
                            )
     
 if selected == "Gemini Pro":
-    Display_Gemini(GEMINI_API_KEY)
+    Display_Gemini(st.secrets["GEMINI_API_KEY"])
 elif selected == "NeVA-22B":
-    Display_NeVA_22B(NVIDIA_API_KEY)
+    Display_NeVA_22B(st.secrets["NVIDIA_API_KEY"])
 # elif selected == "Kosmos2":
 #     Display_Kosmos2()
 elif selected == "Palm-2":
-    Display_Palm2(GEMINI_API_KEY)
+    Display_Palm2(st.secrets["GEMINI_API_KEY"])
 elif selected == "Mistral 8x7B":
-    Display_Mistral_7B(NVIDIA_API_KEY)
+    Display_Mistral_7B(st.secrets["NVIDIA_API_KEY"])
 elif selected == "Llama-2 70B":
-    Display_Llama2(NVIDIA_API_KEY)
+    Display_Llama2(st.secrets["NVIDIA_API_KEY"])

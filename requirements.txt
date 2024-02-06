@@ -1,0 +1,7 @@
+streamlit
+streamlit-option-menu
+streamlit-player
+st-multimodal-chatinput
+google-generativeai
+pillow
+python-dotenv

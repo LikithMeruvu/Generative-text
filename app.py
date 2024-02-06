@@ -3,12 +3,12 @@ from streamlit_option_menu import option_menu
 from dotenv import load_dotenv
 import os
 
-from Models.Gemini import Display_Gemini
-from Models.Neva import Display_NeVA_22B
+from Gemini import Display_Gemini
+from Neva import Display_NeVA_22B
 # from Models.kosmos2 import Display_Kosmos2
-from Models.Palm2 import Display_Palm2
-from Models.Mistral import Display_Mistral_7B
-from Models.Llama2 import Display_Llama2
+from Palm2 import Display_Palm2
+from Mistral import Display_Mistral_7B
+from Llama2 import Display_Llama2
 
 load_dotenv()
 GEMINI_API_KEY = api_key = os.getenv("GEMINI_API_KEY")

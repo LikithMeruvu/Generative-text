@@ -95,7 +95,7 @@ def Display_Mistral_7B(token):
 
 
     if "messages_Mistral" not in st.session_state:
-        st.session_state["messages_Mistral"] = []
+        st.session_state["messages_Mistral"] = [{{"role": "assistant", "content": "Ask me anything you want I can answer you !"}]
 
     for msg in st.session_state.messages_Mistral:
         with st.chat_message(msg.get("role")):

@@ -36,7 +36,7 @@ def Display_Palm2(token):
 
 
     if "messages_palm" not in st.session_state:
-        st.session_state["messages_palm"] = []
+        st.session_state["messages_palm"] = [{"role": "assistant", "content": "Ask me anything you want I can answer you !"}]
 
     for msg in st.session_state.messages_palm:
         with st.chat_message(msg.get("role")):

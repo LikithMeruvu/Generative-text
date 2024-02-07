@@ -198,7 +198,7 @@ def Display_NeVA_22B(token):
             
 
     if "messages_NeVA" not in st.session_state:
-        st.session_state["messages_NeVA"] = []
+        st.session_state["messages_NeVA"] = [{"role": "assistant", "content": "Ask me anything you want or give me image 📷 to explain"}]
 
     for msg in st.session_state.messages_NeVA:
         with st.chat_message(msg.get("role")):

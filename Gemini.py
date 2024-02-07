@@ -101,7 +101,7 @@ def Display_Gemini(token):
 
 
     if "messages" not in st.session_state:
-        st.session_state["messages"] = []
+        st.session_state["messages"] = [{"role": "assistant", "content": "Ask me anything you want or give me image 📷 to explain"}]
 
     for msg in st.session_state.messages:
         with st.chat_message(msg.get("role")):

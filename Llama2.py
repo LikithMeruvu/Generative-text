@@ -94,7 +94,7 @@ def Display_Llama2(token):
 
 
     if "messages_lama" not in st.session_state:
-        st.session_state["messages_lama"] = []
+        st.session_state["messages_lama"] = [{"role": "assistant", "content": "Ask me anything you want I can answer you !"}]
 
     for msg in st.session_state.messages_lama:
         with st.chat_message(msg.get("role")):

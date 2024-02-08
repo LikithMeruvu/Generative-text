@@ -37,7 +37,7 @@ We welcome contributions from the community to enhance and expand Generative Tex
 
 ## Support
 
-If you encounter any issues or have questions, please don't hesitate to reach out. You can contact us through GitHub or [**Mail**](codebook369@gmail.com).
+If you encounter any issues or have questions, please don't hesitate to reach out. You can contact us through GitHub
 
 ## License
 

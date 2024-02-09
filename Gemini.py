@@ -125,10 +125,7 @@ def Display_Gemini(token):
                 st.image(st.session_state.messages[-1]["image"], caption='Uploaded Image', use_column_width=True)
                 st.write(prompt)
             pre_img = input_image_setup(uploaded_image)
-            try:
-                result = Gemini_vision(token=token, prompt=prompt, image=pre_img)
-            except Exception as e:
-                st.chat_message("assistant").write("Your Image is violating our Rules and Guidelines, Please change the image or Prompt.")
+            result = Gemini_vision(token=token,prompt=prompt,image = pre_img)
             uploaded_image = None
 
         else:

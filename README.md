@@ -8,7 +8,7 @@ project demo :-
 
 https://github.com/LikithMeruvu/Generative-text/assets/110189869/0f64d84d-e93e-44b0-bf4e-40123bb346b9
 
-Explore the project live at [**generative-text.streamlit.app**](https://generative-text.streamlit.app).
+
 
 
 
